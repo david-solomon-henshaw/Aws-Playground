@@ -1,0 +1,203 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power of Math Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .input-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    #warning {
+        color: red;
+        display: none;
+    }
+    #submitBtn {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #submitBtn:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+    }
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="input-group">
+        <label for="base">Base:</label>
+        <input type="text" id="base" placeholder="Enter base number" oninput="validateInput('base')">
+        <div id="base-warning" class="warning">Please enter a valid number.</div>
+    </div>
+    <div class="input-group">
+        <label for="exponent">Exponent:</label>
+        <input type="text" id="exponent" placeholder="Enter exponent number" oninput="validateInput('exponent')">
+        <div id="exponent-warning" class="warning">Please enter a valid number.</div>
+    </div>
+    <button id="submitBtn" onclick="submitNumbers()">Submit</button>
+    <div id="result"></div>
+</div>
+
+<script>
+function validateInput(field) {
+    var input = document.getElementById(field);
+    var warning = document.getElementById(field + "-warning");
+    var submitBtn = document.getElementById("submitBtn");
+
+    if (isNaN(input.value)) {
+        warning.style.display = "block";
+        submitBtn.disabled = true;
+    } else {
+        warning.style.display = "none";
+        submitBtn.disabled = false;
+    }
+}
+
+</script>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power of Math Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a; /* Dark background color */
+        color: #fff; /* Light text color */
+    }
+
+    .header {
+        background-color: #333; /* Darker header background color */
+        padding: 10px 0;
+        text-align: center;
+    }
+    .header h1 {
+        margin: 0;}
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #333; /* Darker container background color */
+        border: 1px solid #555; /* Darker border color */
+        border-radius: 5px;
+    }
+    .input-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #ccc; /* Light label color */
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #555; /* Darker input border color */
+        border-radius: 5px;
+        background-color: #444; /* Darker input background color */
+        color: #fff; /* Light text color */
+    }
+    .warning {
+        color: #ff6666; /* Red warning color */
+        display: none;
+    }
+    #submitBtn {
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Green submit button color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #submitBtn:disabled {
+        background-color: #666; /* Darker disabled button color */
+        cursor: not-allowed;
+    }
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Power of Math Calculator</h1>
+    </div>
+
+<div class="container">
+    <div class="input-group">
+        <label for="base">Base:</label>
+        <input type="text" id="base" placeholder="Enter base number" oninput="validateInput('base')">
+        <div id="base-warning" class="warning">Please enter a valid number.</div>
+    </div>
+    <div class="input-group">
+        <label for="exponent">Exponent:</label>
+        <input type="text" id="exponent" placeholder="Enter exponent number" oninput="validateInput('exponent')">
+        <div id="exponent-warning" class="warning">Please enter a valid number.</div>
+    </div>
+    <button id="submitBtn" onclick="submitNumbers()">Submit</button>
+    <div id="result"></div>
+</div>
+
+<script>
+function validateInput(field) {
+    var input = document.getElementById(field);
+    var warning = document.getElementById(field + "-warning");
+    var submitBtn = document.getElementById("submitBtn");
+
+    if (isNaN(input.value)) {
+        warning.style.display = "block";
+        submitBtn.disabled = true;
+    } else {
+        warning.style.display = "none";
+        submitBtn.disabled = false;
+    }
+}
+
+</script>
+
+</body>
+</html>
