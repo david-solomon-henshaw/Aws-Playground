@@ -197,6 +197,32 @@ function validateInput(field) {
     }
 }
 
+function submitNumbers() {
+   
+   let base = document.getElementById('base').value 
+   let exponent = document.getElementById('exponent').value
+   fetch('https://5kf38lbvok.execute-api.us-west-2.amazonaws.com/expoDev',
+   {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({base: base, exponent, exponent})
+   })
+   .then(response => response.json())
+   .then(data => {
+    let result = data
+
+    let placeholder_html = document.getElementById("result")
+    placeholder_html.innerText = data.body
+    console.log(data.body)
+   })
+   .catch(error => {
+    alert(error)
+    console.log('Error',error)
+   })
+}
+
 </script>
 
 </body>
